@@ -1,0 +1,130 @@
+<!DOCTYPEhtml>
+
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="/style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>Sitio web Coder</title>
+    </head>
+
+    <body class="seccionproductos">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <!-- LOGO / NOMBRE -->
+                <a class="navbar-brand fw-bold text-light" href="/index.html">SERAFIN</a>
+    
+                <!-- Botón para colapsar el menú en móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Enlaces del menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/reserva.html">Reservar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pages/talleres.html">Talleres</a></li>
+    
+                        <!-- Redes sociales con iconos -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/serafincafe/" target="_blank">
+                                <img src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png"
+                                     width="25" height="25" alt="Instagram">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/serafincafe03" target="_blank">
+                                <img src="https://static.vecteezy.com/system/resources/previews/018/930/707/non_2x/facebook-logo-facebook-icon-transparent-free-png.png"
+                                     width="25" height="25" alt="Facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="productosprincipio">
+                <div class="productopresentacion">
+                    <h1>PRODUCTOS</h1>
+                    <div class="cuadro-texto1">
+                        <p>En Serafín seleccionamos, tostamos, preparamos y servimos nuestro propio café y también lo empaquetamos y vendemos para que puedas disfrutarlo en casa.</p>
+                    </div>
+                    <div class="cuadro-texto2">
+                        <p>Hay varias razones para elegir nuestro café pero hoy te contamos estas 3 que son claves:</p>
+                        <ul>
+                            <li>Trabajamos con materia prima de excelencia. Seleccionamos los mejores granos de café buscando uniformidad y calidad.</li>
+                            <li>Los tostamos buscando el máximo potencial en cada grano.</li>
+                            <li>Ofrecemos un producto fresco que brinda un excelente resultado en taza.</li>
+                        </ul>
+                        <p>Viaja a Brasil, Honduras, Etiopía y Colombia con los sabores inigualables de nuestro café recién tostado para vos ☕</p>
+                        <button class="pedido-btn">HACÉ TU PEDIDO</button>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </section>
+            <section class="productos-detalle">
+                <!-- Primer Producto -->
+                <div class="producto-item">
+                    <img src="/assets/serafinfraccionadoazul.png" alt="Café Colombia">
+                    <div class="producto-info">
+                        <h2>COLOMBIA, CUNDINAMARCA</h2>
+                        <ul>
+                            <li><strong>Varietal:</strong> Caturra, Typica, Castillo y Colombia.</li>
+                            <li><strong>Beneficio:</strong> Lavado.</li>
+                            <li><strong>Altura:</strong> 1600 metros.</li>
+                            <li><strong>Notas:</strong> Frutal, floral y azúcar morena.</li>
+                        </ul>
+                        <p><strong>Stock:</strong> Disponible.<br>Con envíos a domicilio o retiro de sucursal.</p>
+                        <button class="btn-disponible">PEDIRLO</button>
+                    </div>
+                </div>
+                <div class="producto-item">
+                    <img src="/assets/serafinrojofraccionado.png" alt="Café Honduras">
+                    <div class="producto-info">
+                        <h2 style="color: red;">HONDURAS, OPALACA</h2>
+                        <ul>
+                            <li><strong>Varietal:</strong> Lempira.</li>
+                            <li><strong>Beneficio:</strong> Lavado.</li>
+                            <li><strong>Altura:</strong> 1500 metros.</li>
+                            <li><strong>Notas:</strong> Chocolate con leche, caramelo, almendra y limón.</li>
+                        </ul>
+                        <p><strong>Stock:</strong> No Disponible.<br>Con envíos a domicilio o retiro de sucursal.</p>
+                        <button class="btn-no-disponible" disabled>PEDIRLO</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <img src="/assets/logoserafin.jpg"Logo de Serafin" />
+                    <h2>Serafin</h2>
+                </div>
+                <div class="footer-nosotros">
+                    <h3>Sobre nosotros</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. 
+                    Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Imperdiet augue. 
+                    Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque.</p>
+                </div>
+                <div class="footer-categorias">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li><a href="/pages/menu.html">Menu</a></li>
+                        <li><a href="/pages/productos.html">Productos</a></li>
+                        <li><a href="/pages/reservar.html">Reservar</a></li>
+                        <li><a href="/pages/talleres.html">Talleres</a></li>
+                        <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
