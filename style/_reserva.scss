@@ -1,0 +1,104 @@
+.reserva {
+    background-color: #0d3d28;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/fondoreserva.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .contenedor-reserva {
+        background: #e5d1b8ba; // Beige semitransparente
+        padding: 30px;
+        border-radius: 15px;
+        max-width: 900px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+        h2 {
+            font-size: clamp(2rem, 2.5vw, 3rem);
+            font-weight: bold;
+            color: #10403A;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #393939;
+            margin-bottom: 20px;
+        }
+
+        .formulario-reserva {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .campo {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+
+                label {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: #10403A;
+                    margin-bottom: 5px;
+                }
+
+                input,
+                select,
+                textarea {
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 2px solid #BDBB90;
+                    font-size: 1rem;
+                    font-family: Amiko;
+                    background-color: #fff;
+                    color: #393939;
+                    outline: none;
+                    transition: border 0.3s ease;
+
+                    &:focus {
+                        border-color: #388E3C;
+                    }
+                }
+
+                select {
+                    cursor: pointer;
+                }
+
+                textarea {
+                    resize: none;
+                }
+            }
+
+            .btn-reserva {
+                background: #BDBB90;
+                color: #10403A;
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding: 12px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+                font-family: Amiko;
+                text-transform: uppercase;
+
+                &:hover {
+                    background: #9D9C72;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-reserva {
+        max-width: 90%;
+    }
+}

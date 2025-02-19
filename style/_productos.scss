@@ -1,0 +1,170 @@
+// 🔹 Sección principal de productos
+.productosprincipio {
+    background-image: url('/assets/imagenserafinfraccionados.png'); // Imagen de fondo si tienes
+    background-size: cover;
+    background-position: center;
+    color: #D1D0BC;
+    padding: 20px 20px;
+    text-align: left;
+
+    .productopresentacion {
+        margin: 20px;
+        max-width: 80%;
+        h1 {
+            color: #ffffff;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #ffffff;
+            font-family: Amiko;
+            font-size: clamp(30px, 5vw, 50px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.5px;
+        }
+
+        .cuadro-texto1, .cuadro-texto2 {
+            background: #35341787;
+            padding: 20px;
+            color:#D1D0BC;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            p{
+                font-size: clamp(1rem, 2vw, 1.4rem); 
+            }
+        }
+
+        ul {
+            padding-left: 20px;
+            li {
+                margin-bottom: 8px;
+                font-size: clamp(0.8rem, 1.8vw, 1.2rem); 
+            }
+        }
+
+        .pedido-btn {
+            display: inline-block;
+            font-family: 'Amiko';
+            background: #CDC73F; 
+            padding: 2vw 2.6vw;
+            font-size: 2vw;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+            a {
+                text-decoration: none;
+                color: #10403A;
+                display: block;
+            }
+            &:hover {
+                background: #e3da23; // Naranja oscuro en hover
+            }
+        }
+    }
+}
+
+.productos-detalle {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-items: left;
+    .producto-item {
+        margin-left: 1rem;
+        max-width: 70%;
+        display: flex;
+        align-items: center;
+        background:#fffbf6;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        img {
+            width: 180px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .producto-info {
+            flex: 1;
+            h2 {
+                font-family: 'Univa Nova', serif;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                color: #8B4513; // Marrón café
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                font-size: 16px;
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                margin-top: 10px;
+                color: black;
+            }
+
+            .btn-disponible {
+                display: inline-block;
+                background: #4CAF50; // Verde
+                color: white;
+                padding: 10px 15px;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none; // Quita el subrayado
+                cursor: pointer;
+                transition: background 0.3s ease;
+            
+                &:hover {
+                    background: #388E3C; // Verde oscuro en hover
+                }
+            }
+            
+            .btn-no-disponible {
+                background: #B0B0B0; // Gris claro
+                color: white;
+                padding: 10px 15px;
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: not-allowed;
+            }
+            
+        }
+    }
+}
+
+// 🔹 Ajustes responsivos
+@media (max-width: 768px) {
+    .productos-detalle {
+        justify-content: center;
+        .producto-item {
+            flex-direction: column;
+            text-align: center;
+            margin-left: 10vh;
+            img {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

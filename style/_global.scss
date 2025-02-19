@@ -1,0 +1,173 @@
+@import 'variables';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    margin:0;
+    font-family: 'Amiko';
+}
+
+footer {
+    background-color: #0d3d28; // Verde oscuro
+    color: #f1f1f1;
+    padding: 30px 40px;
+    font-family: 'Amiko', sans-serif;
+    margin-top: 0;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    // 🔹 Logo y nombre
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+        min-width: 150px;
+
+        img {
+            border-radius: 50%;
+            border: 2px solid #f1f1f1;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #f1f1f1;
+        }
+    }
+
+    // 🔹 Sobre nosotros
+    .footer-about {
+        flex: 2;
+        min-width: 200px;
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #e6e6e6;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 14px;
+            color: #dcdcdc;
+        }
+    }
+
+    // 🔹 Categorías
+    .footer-categories {
+        flex: 1;
+        min-width: 150px;
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #e6e6e6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #f1f1f1;
+            font-size: 14px;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: #bdbb90; // Color crema cuando pasas el mouse
+            }
+        }
+    }
+}
+
+// 🔹 RESPONSIVE DESIGN
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .footer-about,
+    .footer-categories {
+        max-width: 90%;
+    }
+}
+
+
+.navbar-custom {
+    background-color: #0d3d28 !important;  // Color verde oscuro
+    padding: 15px 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 999 !important;
+    .navbar-brand {
+        color: #D1D0BC !important; // Beige
+        font-weight: bold;
+    }
+
+    .navbar-nav {
+        display: flex;
+        gap: 20px;
+
+        .nav-item {
+            .nav-link {
+                color: white !important;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1rem;
+
+                &:hover {
+                    color: #e5d1b8 !important;
+                }
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+        background: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-collapse {
+        
+        background-color: #0d3d28; // Fondo en móviles
+    }
+}
+

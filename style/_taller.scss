@@ -1,0 +1,319 @@
+.taller {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: url('/assets/fondotalleres.png') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 40px;
+}
+
+
+.taller-contenido {
+    flex: 1 1 min(90%, 600px); /* 🔹 Se adapta dinámicamente */
+    max-width: 600px;
+}
+
+.titulo-taller {
+    margin-top: 1rem;
+    max-width: 90%;
+    color: #D1D0BC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #D1D0BC;
+    font-family: Amiko;
+    font-size: clamp(30px, 5vw, 50px);
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.1vw;
+    text-align: left;
+}
+.curso {
+    padding: 10px 20px;
+    display: inline-block; 
+    font-weight: bold;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #353417;
+    font-family: Amiko;
+    color: #D1D0BC;
+    font-size: 24px;  
+    font-weight: 700;
+    line-height: normal;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: #BDBB90;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 20px 0;
+    text-decoration: none; // Elimina el subrayado del enlace
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background: #A9A780; // Un color más oscuro al pasar el mouse
+        transform: scale(1.05); // Hace un pequeño zoom
+    }
+}
+
+p {
+    color: #FFF;
+    font-family: "Univa Nova";
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0vw; 
+}
+
+.resaltado {
+    color: #B6B25E;
+    font-weight: 500;
+}
+
+
+.info-taller {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: min(90%, 400px);
+    padding: 40px;
+    background: rgba(16, 64, 58, 0.60);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 10px; 
+    margin: 20px auto;
+    
+    img {
+        width: clamp(30px, 5vw, 50px); 
+        height: auto;
+    }
+
+    h4 {
+        font-size: clamp(16px, 4vw, 20px);
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    p {
+        color: #BDBB90;
+        text-align: center;
+        font-family: "Univa Nova";
+        font-size: clamp(12px, 3vw, 16px);
+        margin: 0; 
+    }
+}
+.entregamos {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    gap: 20px; 
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: clamp(14px, 2vw, 18px); 
+    font-weight: bold;
+    text-transform: uppercase;
+
+    .item {
+        flex: 1 1 150px; 
+    }
+
+    .item:hover {
+        color: #D1D0BC !important;
+        font-size: 18px; 
+    }
+}
+.talleres-disp {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    margin:3rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.talleres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20vh;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 60vh;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #0d3d28;
+        color: white;
+
+        .card-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .card-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .toggle-checkbox {
+                display: none;
+            }
+
+            .bton {
+                width: 100%;
+                padding: 20px;
+                background-color: #e87e04;
+                color: white;
+                border: none;
+                align-items: left;
+                border-radius: 5px;
+                font-size: 14px;
+                margin-bottom: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                text-align: left;
+                transition: background 0.3s ease;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    background-color: #d66a00;
+                    transform: scale(1.05)
+                }
+            }
+
+            .oculto {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+                width: 100%;
+                text-align: left;
+                transform: scaleY(0);
+                transform-origin: top;
+                transition: max-height 0.3s ease-in-out, opacity 0.3s ease, transform 0.3s ease;
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            // Si el checkbox está marcado, mostramos el contenido
+            .toggle-checkbox:checked ~ .oculto {
+                max-height: 500px; // Ajusta según el contenido
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+    }
+}
+.curso-barista {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/barista-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-image: url('/assets/fondobarist.png');
+    padding: 60px 20px;
+    color: white;
+    
+    .curso-container {
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+        gap: 10px;
+
+        .curso-texto {
+            flex: 2;
+            h2 {
+                color: rgba(255, 240, 219, 0.63);
+                text-align: left;
+                font-family: "Univa Nova";
+                font-size: 30px;
+                font-style: normal;
+                line-height: 119.761%;
+                font-weight: 900;
+                span {
+                    color: #d6a34c;                
+                    text-align: center;
+                    font-family: "Univa Nova";
+                    font-size: 78px;
+                    font-style: normal;
+                    letter-spacing: -6.4px;
+                }
+            }
+
+            h3 {
+                font-size: 22px;
+                color: #d6a34c;
+                margin-top: 20px;
+                color: #9DFFF3;
+
+                font-family: Amiko;
+            }
+
+            ul {
+                margin-top: 15px;
+                list-style: none;
+                padding-left: 0;
+
+                li {
+                    margin-bottom: 8px;
+                    font-size: 16px;
+                }
+            }
+
+            .btn-whatsapp {
+                display: flex;
+                align-items: center;
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px 20px;
+                margin-top: 20px;
+                width: fit-content;
+                transition: transform 0.2s ease;
+                border-radius: 6px;
+                border: 8px solid #573315;
+                background: rgba(205, 199, 63, 0.53);
+
+                img {
+                    width: 24px;
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        .curso-imagen {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            img {
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

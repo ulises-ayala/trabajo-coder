@@ -1,0 +1,218 @@
+.primerseccion {
+    background-image: url('/assets/fondohome.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.articulo-main{
+    padding: 20px;
+    margin-left: 20px;
+    font-family: 'Univa Nova';
+    font-size: 2.5rem;
+    h1 {
+        margin-top: 2.5rem;
+        max-width: 90%;
+        color: rgba(255, 255, 255, 0.00);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #D1D0BC;
+        font-family: Amiko;
+        font-size: clamp(30px, 5vw, 50px);
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: -0.1vw;
+        text-align: left;
+    }
+    p {
+    margin-top: 3rem;
+    color: #D1D0BC;
+    font-family: "Univa Nova";
+    font-size: clamp(1rem, 2vw, 1.4rem); 
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    max-width: 80%; 
+    line-height: 1.5;
+    letter-spacing: -0vw; 
+}
+
+}
+
+.segunda-seccion {
+    background-image: url('/assets/fondoorigen.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 50px;
+    color: #e37115; 
+    text-align: left;
+    .origen {
+        max-width: 50rem;
+        color: #e37115;
+        h3 {
+            left: calc(50% - 805px);
+            color: rgba(255, 255, 255, 0);
+            font-family: 'Amiko';
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 64px;
+            text-align: left;
+            -webkit-text-stroke: 2px #e37115;
+        }
+        p {
+            font-family: 'Amiko';
+            font-size: 0.85rem;
+            color: #ffffff;
+            line-height: 1.5;
+        }
+    }
+    .texto-secundario {
+        font-family: 'Univa Nova';
+        font-size: 1rem;
+        color: #f6a51b;
+        margin-bottom: 15px;
+        display: block;
+        line-height: 1.5;
+    }
+    .texto-destacado {
+        font-size: 1.2rem;
+        font-family: 'Univa Nova';
+        font-weight: bold;
+        color: #f6a51b;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
+
+.tercera-seccion {
+    background-color: #ffffff;
+    padding: 50px 50px;
+    display: flex;
+    font-family: Amiko;
+    flex-direction: column;
+    align-items: left;
+    gap: 50px;
+    position: relative;
+    .sucursal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+        background-color: #10403a;
+        color: #ffffff;
+        padding: 15px 20px;
+        border-radius: 5px;
+        h3 {
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+    }
+    .toggle-horarios {
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .contenido-seccion {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px;
+    }
+    .brunch {
+        flex: 1;
+        max-width: 30%;
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+    }
+    .horarios {
+        flex: 1;
+        max-width: 35%;
+        text-align: left;
+        h3 {
+            font-size: 2rem;
+            color: #10403a;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }    
+    }
+    .dias {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h4 {
+            font-size: 1.2rem;
+            color: #10403a;
+            font-weight: bold;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #9b9743;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1rem;
+            color: #565424;
+            margin: 0;
+        }
+    }
+}
+.btn {
+    border-radius: 20px;
+    background: #9B9844;
+    color: #10403A;
+    font-size: 2.2vw;
+    font-style: normal;
+    line-height: normal;
+    padding: 2vw 2vw;
+    font-weight: bold;
+    display:inline-block;
+    min-width: 120px; 
+    max-width: 250px; 
+    width: 30%; 
+    margin-left: 40px;
+    font-family: 'Univa Nova';
+}
+
+.direcciones-home {
+    display: flex;
+    justify-content: left; 
+    gap: 20px; 
+    padding: 20px;
+    margin-left: 20px;
+    text-align: center;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        text-align: center;
+        width: clamp(200px, 45%, 300px); 
+        max-width: 300px;
+        padding: 10px;
+        h2 {
+            font-size: clamp(18px, 4vw, 24px); 
+            font-weight: bold;
+            color: white;
+        }
+        ul {
+            font-family: 'Univa Nova';
+            list-style: none;
+            min-height: 5px;
+            padding: 0;
+            margin: 0;
+            li {
+                font-size: clamp(14px, 3.5vw, 18px);
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
