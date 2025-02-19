@@ -5,7 +5,7 @@ Este es un proyecto web desarrollado para **Serafín**, una cafetería especiali
 
 ## 🌐 Ver Sitio Web
 Este proyecto está desplegado en Vercel.
-📌 **URL del sitio**: [https://serafin.vercel.app](https://serafincafeteria.vercel.app) (Cambia por el enlace real)
+📌 **URL del sitio**: [https://serafincafeteria.vercel.app](https://serafincafeteria.vercel.app)
 
 ## 🚀 Tecnologías Utilizadas
 - **HTML5**
