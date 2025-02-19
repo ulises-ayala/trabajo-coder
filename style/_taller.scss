@@ -12,7 +12,7 @@
 
 
 .taller-contenido {
-    flex: 1 1 min(90%, 600px); /* 🔹 Se adapta dinámicamente */
+    flex: 1 1 min(90%, 600px);
     max-width: 600px;
 }
 
@@ -135,9 +135,10 @@ p {
     width: 90%;
     max-width: 1200px;
     display: flex;
-    margin:3rem;
+    margin:3rem auto;
     align-items: center;
     justify-content: space-around;
+    gap:5vh;
 }
 
 .talleres {
@@ -215,9 +216,9 @@ p {
                 }
             }
 
-            // Si el checkbox está marcado, mostramos el contenido
+    
             .toggle-checkbox:checked ~ .oculto {
-                max-height: 500px; // Ajusta según el contenido
+                max-height: 500px; 
                 opacity: 1;
                 transform: scaleY(1);
             }
@@ -315,5 +316,27 @@ p {
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .talleres {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+    .card {
+        width: 80%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .card {
+        width: 95%;
+    }
+    .bton {
+        font-size: 12px;
+        padding: 15px;
     }
 }
