@@ -6,10 +6,10 @@ Este es un proyecto web desarrollado para **Serafín**, una cafetería especiali
 ## 🚀 Tecnologías Utilizadas
 - **HTML5**
 - **SCSS (SASS)** para estilos avanzados
-- **JavaScript (ES6+)** para interactividad
+- **JavaScript (ES6+)** para la utilización de una galeria
 - **Bootstrap** para diseño responsivo
 - **Git & GitHub** para control de versiones
-- **Vercel** para despliegue en producción
+- **Vercel** para desplegar el sitio
 
 ## 🌟 Características Principales
 ✅ **Menú Interactivo**: Sección con categorías de café, cantina y bebidas.  
@@ -64,28 +64,14 @@ Simplemente abre `index.html` en el navegador o usa Live Server si estás en VS 
 
 ## 🌐 Despliegue en Vercel
 Este proyecto está desplegado en Vercel.
-📌 **URL del sitio**: [https://serafin.vercel.app](https://serafin.vercel.app) (Cambia por el enlace real)
-
-## 🔧 Contribución
-Si quieres contribuir al proyecto:
-1. **Haz un Fork** del repositorio.
-2. **Crea una rama** con tu nueva funcionalidad:
-   ```sh
-   git checkout -b feature-nueva
-   ```
-3. **Realiza tus cambios** y súbelos:
-   ```sh
-   git add .
-   git commit -m "Nueva funcionalidad agregada"
-   git push origin feature-nueva
-   ```
-4. **Crea un Pull Request** y espera la revisión.
+📌 **URL del sitio**: [https://serafin.vercel.app](https://serafincafeteria.vercel.app) (Cambia por el enlace real)
 
 ## 📞 Contacto
-Si tienes dudas o sugerencias, contáctame:
-📧 Email: ulises-ayala@example.com  
+Si surge alguna duda me podes contactar por aca:
+📧 Email: ulisesayala155@gmail.com  
 🔗 GitHub: [https://github.com/ulises-ayala](https://github.com/ulises-ayala)
 
 ---
-💡 **Nota**: ¡Gracias por visitar este proyecto! 😊
+💡 **Nota**: ¡Gracias por visitar el proyecto!😊
+ (espero aprobar...) 
 
