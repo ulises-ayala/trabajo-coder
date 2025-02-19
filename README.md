@@ -3,6 +3,10 @@
 ## 📌 Descripción
 Este es un proyecto web desarrollado para **Serafín**, una cafetería especializada en café de especialidad, brunch y experiencias gastronómicas únicas. El sitio ofrece información sobre el menú, productos, talleres, reservas y contratación de personal.
 
+## 🌐 Ver Sitio Web
+Este proyecto está desplegado en Vercel.
+📌 **URL del sitio**: [https://serafin.vercel.app](https://serafincafeteria.vercel.app) (Cambia por el enlace real)
+
 ## 🚀 Tecnologías Utilizadas
 - **HTML5**
 - **SCSS (SASS)** para estilos avanzados
@@ -41,30 +45,6 @@ Este es un proyecto web desarrollado para **Serafín**, una cafetería especiali
 ├── script.js        # JavaScript para interacciones
 └── README.md        # Archivo de documentación
 ```
-
-## 📦 Instalación y Uso
-### 1️⃣ Clonar el Repositorio
-```sh
-git clone https://github.com/ulises-ayala/trabajo-coder.git
-```
-### 2️⃣ Entrar al Directorio
-```sh
-cd trabajo-coder
-```
-### 3️⃣ Instalar Dependencias (Opcional, si usas un preprocesador como SASS)
-```sh
-npm install
-```
-### 4️⃣ Compilar SASS a CSS (Si usas SCSS)
-```sh
-npm run sass
-```
-### 5️⃣ Ejecutar el Proyecto Localmente
-Simplemente abre `index.html` en el navegador o usa Live Server si estás en VS Code.
-
-## 🌐 Despliegue en Vercel
-Este proyecto está desplegado en Vercel.
-📌 **URL del sitio**: [https://serafin.vercel.app](https://serafincafeteria.vercel.app) (Cambia por el enlace real)
 
 ## 📞 Contacto
 Si surge alguna duda me podes contactar por aca:
